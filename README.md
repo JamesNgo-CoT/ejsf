@@ -2,7 +2,9 @@
 
 Version 1.0.0
 
-EJS Function
+Creates a function (or its string equivalent) from an EJS template. The function accepts one argument which is used as data for the EJS template.
+
+The string equivalent is useful for saving the resulting function into a JavaScript file.
 
 ## Installation
 
