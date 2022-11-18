@@ -1,0 +1,28 @@
+{
+  "name": "ejsf",
+  "version": "1.0.0",
+  "description": "EJS Function",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JamesNgo-CoT/ejsf.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JamesNgo-CoT/ejsf/issues"
+  },
+  "homepage": "https://github.com/JamesNgo-CoT/ejsf#readme",
+  "devDependencies": {
+    "@babel/core": "^7.20.2",
+    "@babel/preset-env": "^7.20.2",
+    "eslint": "^8.27.0"
+  },
+  "dependencies": {
+    "esprima": "^4.0.1"
+  }
+}
