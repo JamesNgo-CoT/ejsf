@@ -12,7 +12,7 @@ The string equivalent is useful for saving the resulting function into a JavaScr
 npm install git+https://github.com/JamesNgo-CoT/ejsf.git#1.0.0
 ```
 
-## ejsf
+## Ejsf
 
 ``` JavaScript
 const Ejsf = require('ejsf');
