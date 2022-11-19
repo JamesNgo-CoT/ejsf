@@ -1,4 +1,4 @@
-# ejsf
+# Ejsf
 
 Version 1.0.0
 
@@ -12,25 +12,31 @@ The string equivalent is useful for saving the resulting function into a JavaScr
 npm install git+https://github.com/JamesNgo-CoT/ejsf.git#1.0.0
 ```
 
-## toFunction(ejsTemplate, options)
+## ejsf
+
+``` JavaScript
+const Ejsf = require('ejsf');
+```
+
+## Ejsf.toFunction(ejsTemplate, options)
 
 - ejsTemplate `string`
 - options `object` Defaults: `'{}'`
 - Returns: `function`
 
-## toFunctionString(ejsTemplate, options)
+## Ejsf.toFunctionString(ejsTemplate, options)
 
 - ejsTemplate `string`
 - options `object` Defaults: `'{}'`
 - Returns: `string`
 
-## fromFileToFunction(filePath, options)
+## Ejsf.fromFileToFunction(filePath, options)
 
 - filePath `string`
 - options `object` Defaults: `'{}'`
 - Returns: `function`
 
-## fromFileToFunctionString(filePath, options)
+## Ejsf.fromFileToFunctionString(filePath, options)
 
 - filePath `string`
 - options `object` Defaults: `'{}'`
@@ -51,3 +57,17 @@ const DEFAULT_DATA_ARG_NAME = 'data';
 const DEFAULT_ESCAPE_FUNCTION_NAME = 'escapeHtml';
 const DEFAULT_OUTPUT_VARIABLE_NAME = 'output';
 ```
+
+## References
+
+### EJS
+
+Embedded JavaScript templating.
+
+https://ejs.co/
+
+### Esprima
+
+Esprima is a high performance, standard-compliant ECMAScript parser written in ECMAScript (also popularly known as JavaScript).
+
+https://esprima.org/
