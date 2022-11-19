@@ -1,4 +1,6 @@
-module.exports = (data) => { const escapeHtml = (value) => typeof value !== 'string' ? value : value.replace(/&/g, '&amp;').replace(/[&<>'"]/g, (tag) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', "'": '&#39;', '"': '&quot;' }[tag] || tag)); const include = (path, data) => include[path](data); include['partials/footer'] = (data) => { const { title } = data; let output = ''; output += `<p>`; output += escapeHtml(title); output += ` version 1.0.0</p>
+module.exports = (data) => { const escapeHtml = (value) => typeof value !== 'string' ? value : value.replace(/&/g, '&amp;').replace(/[&<>'"]/g, (tag) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', "'": '&#39;', '"': '&quot;' }[tag] || tag)); const include = (path, data) => include[path](data); include['partials/footer'] = (data) => { const { title } = data; let output = ''; output += `<p>
+	`; output += escapeHtml(title); output += ` version 1.0.0
+</p>
 `; return output; }; const { title, subTitle } = data; let output = ''; output += `<!DOCTYPE html>
 <html lang="en">
 
@@ -22,8 +24,10 @@ module.exports = (data) => { const escapeHtml = (value) => typeof value !== 'str
 	</header>
 
 	<main>
-		<ul>`; for (let index = 0, length = 100; index < length; index++) { output += `
-			<li>`; output += (index); output += `</li>`; } output += `
+		<ul>`; for (let index=0, length=100; index < length; index++) { output += `
+			<li>
+				`; output += (index); output += `
+			</li>`; } output += `
 		</ul>
 	</main>
 
