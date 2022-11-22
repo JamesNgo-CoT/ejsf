@@ -21,34 +21,34 @@ const Ejsf = require('ejsf');
 ## Ejsf.toFunction(ejsTemplate, options)
 
 - ejsTemplate `string`
-- options `object` Defaults: `'{}'`
+- options `object` Defaults: `'{}'`.
 - Returns: `function`
 
 ## Ejsf.toFunctionString(ejsTemplate, options)
 
 - ejsTemplate `string`
-- options `object` Defaults: `'{}'`
+- options `object` Defaults: `'{}'`.
 - Returns: `string`
 
 ## Ejsf.fromFileToFunction(filePath, options)
 
 - filePath `string`
-- options `object` Defaults: `'{}'`
+- options `object` Defaults: `'{}'`.
 - Returns: `function`
 
 ## Ejsf.fromFileToFunctionString(filePath, options)
 
 - filePath `string`
-- options `object` Defaults: `'{}'`
+- options `object` Defaults: `'{}'`.
 - Returns: `string`
 
 ## options
 
-- cwd `string` The EJS template's current working directory. Defaults: `process.cwd()`
-- dataArgName `string` Function argument name. Defaults: `DEFAULT_DATA_ARG_NAME`
-- escapeFunctionName `string` HTML escape function name. Defaults: `DEFAULT_ESCAPE_FUNCTION_NAME`
+- cwd `string` The EJS template's current working directory. Defaults: `process.cwd()`.
+- dataArgName `string` Function argument name. Defaults: `DEFAULT_DATA_ARG_NAME`.
+- escapeFunctionName `string` HTML escape function name. Defaults: `DEFAULT_ESCAPE_FUNCTION_NAME`.
 - isInclude `boolean` Used internally, do not set. Defaults: `false`
-- outputVariableName `string` Output variable name. Defaults: `DEFAULT_DATA_ARG_NAME`
+- outputVariableName `string` Output variable name. Defaults: `DEFAULT_OUTPUT_VARIABLE_NAME`.
 
 ## Constants
 
