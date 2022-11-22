@@ -4,7 +4,7 @@ const Path = require('path');
 
 const ejsf = require('../index');
 
-const ejsFilePath = 'template.ejs';
+const ejsFilePath = Path.join(__dirname, 'template.ejs');
 const functionString = `module.exports = ${ejsf.fromFileToFunctionString(ejsFilePath)};`;
 
 const esFilePath = `${ejsFilePath}.es6.js`;
@@ -19,7 +19,7 @@ BabelCore.transform(functionString, { 'presets': ['@babel/preset-env'] }, (error
 	const jsFilePath = `${ejsFilePath}.es5.js`;
 	Fs.writeFileSync(jsFilePath, result.code, { encoding: 'utf8' });
 
-	const dataFilePath = 'data.json';
+	const dataFilePath = Path.join(__dirname, 'data.json');
 	const dataRelativeFilePath = Path.relative(__dirname, dataFilePath);
 	const data = require(`${dataRelativeFilePath.charAt(0) === '.' ? '' : './'}${dataRelativeFilePath}`);
 

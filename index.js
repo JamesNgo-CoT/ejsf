@@ -447,7 +447,9 @@ function fromFileToFunctionBody(filePath, options = {}) {
 	if (Path.extname(filePath) !== '.ejs') {
 		filePath = `${filePath}.ejs`;
 	}
-	filePath = Path.join(cwd, filePath);
+	if (!Path.isAbsolute(filePath)) {
+		filePath = Path.join(cwd, filePath);
+	}
 
 	options.cwd = Path.dirname(filePath);
 
