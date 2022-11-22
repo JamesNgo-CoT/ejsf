@@ -1,6 +1,6 @@
-# Ejsf
+# ejsf
 
-Version 1.0.0
+Version 2.0.0
 
 Creates a function (or its string equivalent) from an EJS template. The function accepts one argument which is used as data for the EJS template.
 
@@ -9,7 +9,7 @@ The string equivalent is useful for saving the resulting function into a JavaScr
 ## Installation
 
 ```
-npm install git+https://github.com/JamesNgo-CoT/ejsf.git#1.0.0
+npm install git+https://github.com/JamesNgo-CoT/ejsf.git#2.0.0
 ```
 
 ## Ejsf
@@ -57,17 +57,3 @@ const DEFAULT_DATA_ARG_NAME = 'data';
 const DEFAULT_ESCAPE_FUNCTION_NAME = 'escapeHtml';
 const DEFAULT_OUTPUT_VARIABLE_NAME = 'output';
 ```
-
-## References
-
-### EJS
-
-Embedded JavaScript templating.
-
-https://ejs.co/
-
-### Esprima
-
-Esprima is a high performance, standard-compliant ECMAScript parser written in ECMAScript (also popularly known as JavaScript).
-
-https://esprima.org/

@@ -18,9 +18,9 @@ module.exports = function (data) {
   include['partials/footer'] = function (data) {
     var title = data.title;
     var output = '';
-    output += "<p>\n\t";
+    output += "<p>";
     output += escapeHtml(title);
-    output += " version 1.0.0\n</p>\n";
+    output += " version 1.0.0</p>\n";
     return output;
   };
   var title = data.title,
@@ -38,9 +38,9 @@ module.exports = function (data) {
   }
   output += "\n\t</header>\n\n\t<main>\n\t\t<ul>";
   for (var index = 0, length = 100; index < length; index++) {
-    output += "\n\t\t\t<li>\n\t\t\t\t";
+    output += "\n\t\t\t<li>";
     output += index;
-    output += "\n\t\t\t</li>";
+    output += "</li>";
   }
   output += "\n\t\t</ul>\n\t</main>\n\n\t<footer>\n\t\t";
   output += include('partials/footer', {
